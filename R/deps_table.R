@@ -19,7 +19,7 @@ deps_table <- function(pkg, stdlib = FALSE, self = FALSE, lib_loc = NULL){
     names(deps_list) <- all_deps
     deps_free <- all_deps[lengths(deps_list) == 0]
     deps_seq <- deps_seq(deps_list, deps_free)
-    deps_mat <- installed[match(deps_seq, rownames(installed)),]
+    deps_mat <- installed[match(deps_seq, rownames(installed)), , drop = FALSE]
     fields <- c(
         package      = 'Package',
         version      = 'Version',
