@@ -1,6 +1,6 @@
 Package: depra
 Title: Ordered Table of Package Dependencies
-Version: 0.1
+Version: 0.1.1
 Author: Aljaž Sluga [aut, cre]
 Description: Ordered table of package dependencies.
 License: MIT + file LICENSE
